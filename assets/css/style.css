@@ -1346,6 +1346,7 @@
 
     .hero {
         padding: 0 16px;
+        height: 100vh;
     }
 
     .what-we-do .container {
