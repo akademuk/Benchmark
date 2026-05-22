@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Benchmark offers exceptional investment opportunities, premium financial services, and a unique approach to wealth management. Visit our branches in Dubai Mall, Marina, Downtown and more.">
+    <title>Benchmark</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!-- Libraries CSS -->
+    <!-- Libraries CSS (Deferred) -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/libs/aos/aos.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/libs/lenis/lenis.css" media="print" onload="this.media='all'" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- NoScript Fallback -->
+    <noscript>
+        <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/libs/aos/aos.css" />
+        <link rel="stylesheet" href="assets/libs/lenis/lenis.css" />
+    </noscript>
+
+    <!-- Scripts (Deferred) -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="assets/libs/aos/aos.js" defer></script>
+    <script src="assets/libs/lenis/lenis.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="header__container container">
+            <a href="/" class="header__logo" aria-label="Benchmark — Home">
+                <img src="assets/images/logo.svg" width="400" height="100" alt="Benchmark">
+            </a>
+            <button class="header__burger" aria-label="Open menu" aria-expanded="false" aria-controls="header-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav" id="header-nav" aria-label="Main navigation">
+                <div class="header__nav-inner">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#about" class="header__nav-link">
+                                <span class="header__nav-num">01</span>
+                                <span class="header__nav-text">About</span>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#approach" class="header__nav-link">
+                                <span class="header__nav-num">02</span>
+                                <span class="header__nav-text">Approach</span>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#vision" class="header__nav-link">
+                                <span class="header__nav-num">03</span>
+                                <span class="header__nav-text">Vision</span>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#projects" class="header__nav-link">
+                                <span class="header__nav-num">04</span>
+                                <span class="header__nav-text">Projects</span>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#contacts" class="header__nav-link">
+                                <span class="header__nav-num">05</span>
+                                <span class="header__nav-text">Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header__nav-footer">
+                        <span class="header__nav-footer-label">© Benchmark 2026</span>
+                        <div class="header__nav-footer-langs">
+                            <a href="/en" lang="en" hreflang="en">EN</a>
+                            <a href="/ar" lang="ar" hreflang="ar">AR</a>
+                        </div>
+                    </div>
+                    <div class="header__nav-icon">
+                        <img src="assets/images/icon.svg" width="51" height="51" alt="">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <h1 id="hero-heading">Benchmark —<br>— managing<br>performance</h1>
+                <div class="hero__box">
+                    <div class="hero__box-left">
+                        <a href="/uae">UAE</a>
+                        <a href="/dubai">Dubai</a>
+                        <span aria-label="Year 2026">/ 2026</span>
+                    </div>
+                    <div class="hero__box-right">
+                        <a href="/" aria-label="Home">
+                            <img src="assets/images/element.svg" width="23" height="23" alt="">
+                        </a>
+                        <nav aria-label="Language switcher">
+                            <a href="/en" lang="en" hreflang="en" aria-current="true">EN</a>
+                            <a href="/ar" lang="ar" hreflang="ar">AR</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__bg" role="img" aria-label="Benchmark hero background">
+                <picture>
+                    <source srcset="assets/images/hero.webp" type="image/webp">
+                    <img src="assets/images/hero.jpg" width="1920" height="1080" alt="" aria-hidden="true">
+                </picture>
+            </div>
+        </section>
+
+        <section class="who-we-are" id="about" aria-labelledby="who-we-are-heading">
+            <div class="container">
+                <div class="who-we-are__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="assets/images/who-we-are.webp" type="image/webp">
+                                <img src="assets/images/who-we-are.jpg" width="884" height="692" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="assets/images/who-we-are.webp" type="image/webp">
+                                <img src="assets/images/who-we-are.jpg" width="884" height="692" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="assets/images/who-we-are.webp" type="image/webp">
+                                <img src="assets/images/who-we-are.jpg" width="884" height="692" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="who-we-are__swiper-nav">
+                        <button class="who-we-are__swiper-prev" aria-label="Previous slide">
+                            <img src="assets/images/arrow-left.svg" width="24" height="24" alt="" aria-hidden="true">
+                        </button>
+                        <div class="who-we-are__swiper-pagination" role="group" aria-label="Slide pagination"></div>
+                        <button class="who-we-are__swiper-next" aria-label="Next slide">
+                            <img src="assets/images/arrow-right.svg" width="24" height="24" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+                </div>
+                <div class="who-we-are__content">
+                    <div class="who-we-are__content-description">
+                        <p><strong>Benchmark</strong> is a strategic management company under <strong>Wealthguard
+                                Holding</strong>, providing centralized oversight and coordination across a portfolio of
+                            businesses.</p>
+                    </div>
+                    <h2 id="who-we-are-heading"><span>Who</span> We Are</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do" id="approach" aria-labelledby="what-we-do-heading">
+            <div class="container">
+                <div class="what-we-do__left">
+                    <h2 id="what-we-do-heading">What <span>We Do</span></h2>
+                    <div class="what-we-do__description">
+                        <p><strong>We manage,</strong> guide, and enhance business performance through a structured
+                            approach to operations and strategy</p>
+                    </div>
+                </div>
+                <div class="what-we-do__accordion" role="list">
+                    <div class="what-we-do__accordion-item is-open" role="listitem">
+                        <button class="what-we-do__accordion-trigger" aria-expanded="true"
+                            aria-controls="accordion-panel-1" id="accordion-btn-1">
+                            <span class="what-we-do__accordion-num">/ 01</span>
+                            <span class="what-we-do__accordion-title">Operational efficiency</span>
+                        </button>
+                        <div class="what-we-do__accordion-panel" id="accordion-panel-1" role="region"
+                            aria-labelledby="accordion-btn-1">
+                            <p>We manage and coordinate all core functions across the business, including general
+                                management, marketing, HR, finance, legal, PRO services, and asset management. Our role
+                                is to ensure clear structure, efficient processes, and strong operational control across
+                                all departments.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do__accordion-item" role="listitem">
+                        <button class="what-we-do__accordion-trigger" aria-expanded="false"
+                            aria-controls="accordion-panel-2" id="accordion-btn-2">
+                            <span class="what-we-do__accordion-num">/ 02</span>
+                            <span class="what-we-do__accordion-title">Strategic alignment</span>
+                        </button>
+                        <div class="what-we-do__accordion-panel" id="accordion-panel-2" role="region"
+                            aria-labelledby="accordion-btn-2">
+                            <p>We align all entities and functions with the overall investment strategy, ensuring
+                                consistent direction in decision-making, resource allocation, and growth initiatives.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="what-we-do__accordion-item" role="listitem">
+                        <button class="what-we-do__accordion-trigger" aria-expanded="false"
+                            aria-controls="accordion-panel-3" id="accordion-btn-3">
+                            <span class="what-we-do__accordion-num">/ 03</span>
+                            <span class="what-we-do__accordion-title">Performance optimization</span>
+                        </button>
+                        <div class="what-we-do__accordion-panel" id="accordion-panel-3" role="region"
+                            aria-labelledby="accordion-btn-3">
+                            <p>We monitor and improve operational, financial, and asset performance through structured
+                                analysis, process improvements, and performance-driven management.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do__accordion-item" role="listitem">
+                        <button class="what-we-do__accordion-trigger" aria-expanded="false"
+                            aria-controls="accordion-panel-4" id="accordion-btn-4">
+                            <span class="what-we-do__accordion-num">/ 04</span>
+                            <span class="what-we-do__accordion-title">Consistent standards across all entities</span>
+                        </button>
+                        <div class="what-we-do__accordion-panel" id="accordion-panel-4" role="region"
+                            aria-labelledby="accordion-btn-4">
+                            <p>We implement unified standards across operations,
+                                reporting, finance, legal, HR, and brand, ensuring
+                                consistency, control, and transparency across the group.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="what-we-do-bg">
+                <picture>
+                    <source srcset="assets/images/we-do.webp" type="image/webp">
+                    <img src="assets/images/we-do.jpg" width="1920" height="1080" alt="" loading="lazy"
+                        aria-hidden="true">
+                </picture>
+            </div>
+        </section>
+
+        <section class="value">
+            <div class="container">
+                <div class="value__content">
+                    <h2>Value <span>we bring</span></h2>
+                    <div class="value__content-description">
+                        <p>We create value by bringing order, discipline, and clarity into <span>business
+                                operations</span></p>
+                    </div>
+                </div>
+                <div class="value__cards">
+                    <div class="value__card">
+                        <div class="value__card-image">
+                            <picture>
+                                <source srcset="assets/images/value__cards1.webp" type="image/webp">
+                                <img src="assets/images/value__cards1.jpg" width="417" height="330" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                        <h3>Strong management structure</h3>
+                    </div>
+                    <div class="value__card">
+                        <div class="value__card-image">
+                            <picture>
+                                <source srcset="assets/images/value__cards2.webp" type="image/webp">
+                                <img src="assets/images/value__cards2.jpg" width="417" height="330" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                        <h3>Transparent processes</h3>
+                    </div>
+                    <div class="value__card">
+                        <div class="value__card-image">
+                            <picture>
+                                <source srcset="assets/images/value__cards3.webp" type="image/webp">
+                                <img src="assets/images/value__cards3.jpg" width="417" height="330" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                        <h3>Transparent processes</h3>
+                    </div>
+                    <div class="value__card">
+                        <div class="value__card-image">
+                            <picture>
+                                <source srcset="assets/images/value__cards4.webp" type="image/webp">
+                                <img src="assets/images/value__cards4.jpg" width="417" height="330" loading="lazy"
+                                    alt="Benchmark office interior">
+                            </picture>
+                        </div>
+                        <h3>Consistent execution across all companies</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-approach" id="vision" aria-labelledby="our-approach-heading">
+            <div class="container">
+                <h2 id="our-approach-heading">Our <span>Approach</span></h2>
+                <div class="our-approach__cards" role="list">
+                    <article class="our-approach__card" role="listitem">
+                        <span>/ 01</span>
+                        <p><strong>Benchmark</strong> operates as a centralized management layer that connects all
+                            businesses into one cohesive system</p>
+                    </article>
+                    <article class="our-approach__card" role="listitem">
+                        <span>/ 02</span>
+                        <p><strong>We use</strong> AI, integrated systems, and dashboards to ensure full visibility,
+                            real-time control, and performance optimization across all operations.</p>
+                    </article>
+                    <article class="our-approach__card" role="listitem">
+                        <span>/ 03</span>
+                        <p>Every company benefits from shared expertise, structured management, and continuous
+                            <strong>oversight</strong>
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="our-approach__bg" role="img" aria-label="Our approach background">
+                <picture>
+                    <source srcset="assets/images/our-approach.webp" type="image/webp">
+                    <img src="assets/images/our-approach.jpg" width="1920" height="1080" alt="" loading="lazy"
+                        aria-hidden="true">
+                </picture>
+            </div>
+        </section>
+
+        <section class="our-projects" id="projects" aria-labelledby="our-projects-heading">
+            <div class="container">
+                <div class="our-projects__left">
+                    <h2 id="our-projects-heading">Our projects</h2>
+                    <div class="our-projects__description">
+                        <p>To build a well-structured, high-performing ecosystem of businesses operating under a unified
+                            management standard</p>
+                    </div>
+                </div>
+                <div class="our-projects__cards" role="list">
+                    <article class="our-projects__card" role="listitem">
+                        <a href="/" target="_blank" aria-label="View project 1">
+                            <picture>
+                                <source srcset="assets/images/our-projects1.webp" type="image/webp">
+                                <img src="assets/images/our-projects1.png" width="284" height="284" loading="lazy"
+                                    alt="Benchmark project 1">
+                            </picture>
+                        </a>
+                    </article>
+                    <article class="our-projects__card" role="listitem">
+                        <a href="/" target="_blank" aria-label="View project 2">
+                            <picture>
+                                <source srcset="assets/images/our-projects2.webp" type="image/webp">
+                                <img src="assets/images/our-projects2.png" width="284" height="284" loading="lazy"
+                                    alt="Benchmark project 2">
+                            </picture>
+                        </a>
+                    </article>
+                    <article class="our-projects__card" role="listitem">
+                        <a href="/" target="_blank" aria-label="View project 3">
+                            <picture>
+                                <source srcset="assets/images/our-projects3.webp" type="image/webp">
+                                <img src="assets/images/our-projects3.png" width="284" height="284" loading="lazy"
+                                    alt="Benchmark project 3">
+                            </picture>
+                        </a>
+                    </article>
+                    <article class="our-projects__card" role="listitem">
+                        <a href="/" target="_blank" aria-label="View project 4">
+                            <picture>
+                                <source srcset="assets/images/our-projects4.webp" type="image/webp">
+                                <img src="assets/images/our-projects4.png" width="284" height="284" loading="lazy"
+                                    alt="Benchmark project 4">
+                            </picture>
+                        </a>
+                    </article>
+                    <article class="our-projects__card" role="listitem">
+                        <a href="/" target="_blank" aria-label="View project 5">
+                            <picture>
+                                <source srcset="assets/images/our-projects5.webp" type="image/webp">
+                                <img src="assets/images/our-projects5.png" width="284" height="284" loading="lazy"
+                                    alt="Benchmark project 5">
+                            </picture>
+                        </a>
+                    </article>
+                    <article class="our-projects__card" role="listitem">
+                        <a href="/" target="_blank" aria-label="View project 6">
+                            <picture>
+                                <source srcset="assets/images/our-projects6.webp" type="image/webp">
+                                <img src="assets/images/our-projects6.png" width="284" height="284" loading="lazy"
+                                    alt="Benchmark project 6">
+                            </picture>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <nav aria-label="Footer navigation">
+                <ul>
+                    <li>
+                        <a href="#about">Who We Are</a>
+                    </li>
+                    <li>
+                        <a href="#approach">What We Do</a>
+                    </li>
+                    <li>
+                        <a href="#vision">Our Approach</a>
+                    </li>
+                    <li>
+                        <a href="#vision">Value We Bring</a>
+                    </li>
+                    <li>
+                        <a href="#vision">Our Vision</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Our Projects</a>
+                    </li>
+                </ul>
+            </nav>
+            <form action="" aria-label="Subscribe to newsletter">
+                <div class="footer-form-block">
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email field" aria-label="Email address"
+                        required>
+                        <button type="submit" aria-label="Submit email subscription">
+                    <img src="assets/images/btn.svg" alt="" aria-hidden="true">
+                </button>
+                </div>
+                
+            </form>
+            <div class="footer-info">
+                <ul aria-label="Legal links">
+                    <li>
+                        <a href="#contacts">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="/privacy">Privacy Notice</a>
+                    </li>
+                </ul>
+                <p><small>©2026 Benchmark</small></p>
+                <a href="/" aria-label="Benchmark — Home">
+                    <img src="assets/images/logo-green.svg" width="200" height="50" alt="Benchmark">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bg">
+            <img src="assets/images/footer.png" width="1920" height="1080" alt="" loading="lazy" aria-hidden="true">
+        </div>
+    </footer>
+</body>
+
+</html>
