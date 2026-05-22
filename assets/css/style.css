@@ -1242,6 +1242,7 @@
         align-items: center;
         justify-content: space-between;
         padding-top: 32px;
+        gap: 20px;
         border-top: 1px solid rgba(255, 255, 255, 0.08);
         opacity: 0;
         transform: translateY(16px);
