@@ -224,6 +224,7 @@
     display: flex;
     align-items: center;
     gap: 66px;
+    width: 100%;
 }
 
 .hero__box-right nav a:nth-of-type(1)::after {
