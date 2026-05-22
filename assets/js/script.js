@@ -102,21 +102,6 @@ if (window.innerWidth >= 1280) {
     });
 }
 
-// ─── All anchor links smooth scroll ───
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-        const href = link.getAttribute('href');
-        const target = document.querySelector(href);
-        if (!target) return;
-        e.preventDefault();
-        if (lenis) {
-            lenis.scrollTo(target, { duration: 1.4 });
-        } else {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
 // Burger menu
 const burger = document.querySelector('.header__burger');
 const headerNav = document.querySelector('.header__nav');
@@ -145,9 +130,33 @@ burger.addEventListener('click', () => {
     headerNav.classList.contains('is-open') ? closeMenu() : openMenu();
 });
 
-// Close menu on link click
-headerNav.querySelectorAll('.header__nav-link').forEach(link => {
-    link.addEventListener('click', closeMenu);
+// ─── All anchor links smooth scroll ───
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+
+        const isMenuOpen = headerNav.classList.contains('is-open');
+
+        const doScroll = () => {
+            if (lenis) {
+                lenis.start();
+                lenis.scrollTo(target, { duration: 1.4 });
+            } else {
+                document.body.style.overflow = '';
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+
+        if (isMenuOpen) {
+            closeMenu();
+            setTimeout(doScroll, MENU_CLOSE_DURATION);
+        } else {
+            doScroll();
+        }
+    });
 });
 
 // Header scroll
