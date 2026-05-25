@@ -1106,6 +1106,7 @@ body {
     .header {
         top: 16px;
         padding: 0 16px;
+        position: absolute;
     }
 
     .header__container {
@@ -1536,5 +1537,20 @@ body {
 
     .our-projects__cards {
         justify-content: center;
+    }
+
+    .value__cards {
+        justify-content: center;
+    }
+
+    .value__card {
+        min-width: 150px;
+        min-height: 150px;
+        width: 150px;
+        flex: 1; 
+    }
+
+    .value__card-image {
+        height: 150px;
     }
 }
