@@ -19,6 +19,11 @@
     }
 }
 
+html,
+body {
+    overflow-x: clip;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -190,6 +195,7 @@
     height: 130%;
     object-fit: cover;
     will-change: transform;
+    object-position: right;
 }
 
 .hero__bg::before {
@@ -352,6 +358,10 @@
     position: absolute;
     right: 0;
     top: -80px;
+}
+
+.who-we-are__swiper  .swiper-slide {
+    height: auto;
 }
 
 .who-we-are__swiper-prev {
@@ -738,6 +748,7 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(301deg, #000 3.57%, rgba(0, 0, 0, 0.00) 69.54%);
+    z-index: 1;
 }
 
 .value__card:nth-last-of-type(2) {
@@ -1332,7 +1343,7 @@
 
     .who-we-are__swiper .swiper-slide img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -1373,6 +1384,7 @@
     .what-we-do__left h2 {
         flex-direction: row;
         max-width: 100%;
+        letter-spacing: normal;
     }
 
     .what-we-do__left {
@@ -1455,6 +1467,7 @@
     .our-approach__card {
         min-width: 200px;
         flex: 1;
+        min-height: 200px;
     }
 
     .our-projects {
@@ -1512,5 +1525,16 @@
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         transition: background 0.3s ease, backdrop-filter 0.3s ease;
+    }
+
+    .our-projects__card {
+        min-width: 150px;
+        min-height: 150px;
+        width: 150px;
+        flex: none;
+    }
+
+    .our-projects__cards {
+        justify-content: center;
     }
 }
