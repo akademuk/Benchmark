@@ -39,12 +39,14 @@
     width: 392px;
     height: 99px;
     display: flex;
+    justify-content: flex-start;
 }
 
 .header__logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-fit: left;
 }
 
 .header__nav {
