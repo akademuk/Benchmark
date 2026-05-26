@@ -235,19 +235,6 @@ body {
     width: 100%;
 }
 
-.hero__box-right nav a:nth-of-type(1)::after {
-    content: "/";
-    color: #FFF;
-    font-family: 'Satoshi';
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 113%;
-    letter-spacing: -0.21px;
-    text-decoration: none;
-    margin: 0 8px;
-    display: flex;
-}
-
 .hero__box-right nav {
     display: flex;
     align-items: center;
@@ -360,7 +347,7 @@ body {
     top: -80px;
 }
 
-.who-we-are__swiper  .swiper-slide {
+.who-we-are__swiper .swiper-slide {
     height: auto;
 }
 
@@ -729,7 +716,7 @@ body {
 }
 
 .value__card-image {
-    height: 329px;
+    max-height: 329px;
     width: 100%;
     overflow: hidden;
     border-radius: 19px;
@@ -740,6 +727,7 @@ body {
     width: 100%;
     height: 130%;
     object-fit: cover;
+    object-position: right;
     will-change: transform;
 }
 
@@ -767,7 +755,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, #121416 0%, rgba(18, 20, 22, 0.00) 100%);
+    background: linear-gradient(180deg, #121416 0%, rgba(18, 20, 22, 0.00) 15%);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -777,7 +765,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(0, #121416 0%, rgba(18, 20, 22, 0.00) 100%);
+    background: linear-gradient(0, #121416 0%, rgba(18, 20, 22, 0.00) 15%);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -928,13 +916,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 52px;
-    flex: 1;
 }
 
 .our-projects__card {
-    flex: 1 0 0;
-    min-height: 284px;
-    min-width: 250px;
+    flex: 1 1 calc(33% - 32px);
+    max-height: 284px;
+    width: 100%;
 }
 
 .our-projects__card a {
@@ -1094,7 +1081,12 @@ body {
     display: none;
 }
 
-
+.who-we-are__swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 
@@ -1522,7 +1514,7 @@ body {
     }
 
     .header__container {
-                background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         transition: background 0.3s ease, backdrop-filter 0.3s ease;
@@ -1537,6 +1529,7 @@ body {
 
     .our-projects__cards {
         justify-content: center;
+        width: 100%;
     }
 
     .value__cards {
@@ -1547,7 +1540,7 @@ body {
         min-width: 150px;
         min-height: 150px;
         width: 150px;
-        flex: 1; 
+        flex: 1;
     }
 
     .value__card-image {
