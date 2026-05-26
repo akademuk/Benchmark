@@ -1546,4 +1546,12 @@ body {
     .value__card-image {
         height: 150px;
     }
+
+    .our-approach::after {
+        background: linear-gradient(0, #121416 0%, rgba(18, 20, 22, 0.00) 100%);
+    }
+
+    .our-approach::before {
+        background: linear-gradient(180deg, #121416 0%, rgba(18, 20, 22, 0.00) 100%);
+    }
 }
