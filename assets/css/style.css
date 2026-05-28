@@ -287,6 +287,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .who-we-are__content-description {
@@ -313,7 +314,6 @@ body {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    position: relative;
     max-width: 700px;
     width: 100%;
 }
@@ -330,9 +330,8 @@ body {
     width: 60px;
     height: 60px;
     position: absolute;
-    right: -165px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 0;
+    bottom: 80px;
 }
 
 .who-we-are__content-description::before {
@@ -493,8 +492,8 @@ body {
     left: 0;
     right: 0;
     height: 60%;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(8.25px);
+    -webkit-backdrop-filter: blur(8.25px);
     -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     pointer-events: none;
@@ -632,7 +631,7 @@ body {
 .value__content h2 {
     color: #FFF;
     font-family: 'Neiko';
-    font-size: clamp(48px, 12vw, 177px);
+    font-size: clamp(48px, 11vw, 177px);
     font-weight: 400;
     line-height: clamp(48px, 9vw, 136px);
     letter-spacing: -5.31px;
@@ -838,8 +837,8 @@ body {
     left: 0;
     right: 0;
     height: 60%;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     pointer-events: none;
@@ -1553,5 +1552,65 @@ body {
 
     .our-approach::before {
         background: linear-gradient(180deg, #121416 0%, rgba(18, 20, 22, 0.00) 100%);
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .our-approach {
+        padding-bottom: 286px;
+    }
+
+    .our-approach::after {
+        background: linear-gradient(0, #121416 0%, rgba(18, 20, 22, 0.00) 35%);
+    }
+
+    .our-projects .container {
+        margin-top: -150px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .our-projects {
+        padding-top: 150px;
+    }
+
+    .our-projects__cards {
+        position: relative;
+        max-width: calc(100% - 733px - 98px);
+    }
+
+    .our-projects__cards::before {
+        content: "";
+        background: url(../images/icon.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 51px;
+        height: 51px;
+        position: absolute;
+        right: 0;
+        top: -170px;
+    }
+
+    .our-projects__card picture {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #our-projects-heading span {
+        margin-right: 90px;
+    }
+
+    .footer .container::before {
+        content: "";
+        background: url(../images/icon.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 51px;
+        height: 51px;
+        position: absolute;
+        right: 0;
+        top: 50px;
     }
 }

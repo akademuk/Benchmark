@@ -83,24 +83,24 @@ document.querySelectorAll('.value__card-image').forEach(card => {
 });
 
 // ─── Our Projects cards parallax ───
-if (window.innerWidth >= 1280) {
-    document.querySelectorAll('.our-projects__card').forEach((card, i) => {
-        const direction = i % 2 === 0 ? -40 : 40;
-        gsap.fromTo(card,
-            { y: direction },
-            {
-                y: -direction,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: '.our-projects',
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: true,
-                },
-            }
-        );
-    });
-}
+// if (window.innerWidth >= 1280) {
+//     document.querySelectorAll('.our-projects__card').forEach((card, i) => {
+//         const direction = i % 2 === 0 ? -40 : 40;
+//         gsap.fromTo(card,
+//             { y: direction },
+//             {
+//                 y: -direction,
+//                 ease: 'none',
+//                 scrollTrigger: {
+//                     trigger: '.our-projects',
+//                     start: 'top bottom',
+//                     end: 'bottom top',
+//                     scrub: true,
+//                 },
+//             }
+//         );
+//     });
+// }
 
 // Burger menu
 const burger = document.querySelector('.header__burger');
