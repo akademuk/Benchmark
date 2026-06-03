@@ -1089,7 +1089,16 @@ body {
 
 
 
+@media (max-width: 1700px) {
+  .header__logo {
+    width: 250px;
+    height: 80px;
+  }
 
+  .our-projects .container {
+    align-items: flex-start;
+  }
+}
 
 
 
