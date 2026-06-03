@@ -1530,6 +1530,7 @@ body {
 
     .footer form {
         max-width: 100%;
+        width: 100%;
     }
 
     .footer-info {
@@ -1582,6 +1583,18 @@ body {
 
     .our-approach::before {
         background: linear-gradient(180deg, #121416 0%, rgba(18, 20, 22, 0.00) 100%);
+    }
+
+    .who-we-are__content h2::after {
+        bottom: 100%;
+    }
+
+    .value__content-description p {
+        display: inline
+    }
+
+    .footer-logo2 {
+        display: none;
     }
 }
 
